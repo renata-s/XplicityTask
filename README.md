@@ -1,4 +1,4 @@
-# demo-app
+# Xplicity-task
 
 ## Project setup
 ```
