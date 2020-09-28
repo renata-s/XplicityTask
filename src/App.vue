@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    <Products />
+    <v-toolbar
+      dark
+      prominent
+      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+    >
+      <v-toolbar-title>Xplicity products</v-toolbar-title>
+    </v-toolbar>
+
+    <router-view></router-view>
   </div>
 </template>
 

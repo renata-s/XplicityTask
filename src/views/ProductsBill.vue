@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Bill page</h1>
     <v-simple-table>
       <template v-slot:default>
         <thead>
@@ -13,7 +14,7 @@
         </thead>
         <tbody>
           <template v-for="(item, index) in prices">
-            <ProductLine :key="index" :line="item" />
+            <ProductLineReadonly :key="index" :line="item" />
           </template>
         </tbody>
         <tfoot>
@@ -37,7 +38,7 @@
 
     <v-footer absolute>
       <v-col align="right">
-        <v-btn color="error" dark large @click="Continue"> Continue </v-btn>
+        <v-btn color="error" dark large @click="Back"> Back </v-btn>
       </v-col>
     </v-footer>
   </div>
@@ -48,15 +49,7 @@ let productsfromLocalStorage = null;
 export default {
   data() {
     return {
-      prices: productsfromLocalStorage ?? [
-        {
-          id: 1,
-          code: "3456",
-          name: "T-shirt",
-          price: "20",
-          tax: 21
-        }
-      ]
+      prices: productsfromLocalStorage
     };
   },
   beforeRouteEnter(to, from, next) {
@@ -85,9 +78,8 @@ export default {
         tax: 21
       });
     },
-    Continue() {
-      localStorage.setItem("products", JSON.stringify(this.prices));
-      this.$router.push("/ProductsBill");
+    Back() {
+      this.$router.go(-1);
     }
   }
 };
