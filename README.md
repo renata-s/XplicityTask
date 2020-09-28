@@ -1,5 +1,8 @@
 # Xplicity-task
 
+### Demo site
+https://5f7232d616199181dd8eb1f0--lucid-jones-d87f83.netlify.app/
+
 ## Project setup
 ```
 npm install
