@@ -26,6 +26,21 @@
             <ProductLine :key="index" :line="item" />
           </template>
         </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">
+              <v-text-field flat solo readonly value="Subtotal:"></v-text-field>
+            </td>
+            <td>
+              <v-text-field
+                flat
+                solo
+                readonly
+                v-model="TotalLinesPrice"
+              ></v-text-field>
+            </td>
+          </tr>
+        </tfoot>
       </template>
     </v-simple-table>
     <v-btn elevation="2" @click="AddLine">Add line</v-btn>
@@ -46,6 +61,15 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    TotalLinesPrice: {
+      get() {
+        return this.prices.reduce(function(total, value) {
+          return Number(total) + Number(value.price);
+        }, 0);
+      }
+    }
   },
   methods: {
     AddLine() {
