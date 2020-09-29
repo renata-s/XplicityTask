@@ -1,10 +1,45 @@
 <template>
   <tr>
-    <td><v-text-field flat solo v-model="line.code"></v-text-field></td>
-    <td><v-text-field flat solo v-model="line.name"></v-text-field></td>
-    <td><v-text-field flat solo v-model="line.price"></v-text-field></td>
-    <td><v-text-field flat solo v-model="line.tax"></v-text-field></td>
-    <td><v-text-field flat solo v-model="TotalPrice"></v-text-field></td>
+    <td>
+      <v-text-field
+        flat
+        solo
+        v-model="line.code"
+        class="product-editor"
+      ></v-text-field>
+    </td>
+    <td>
+      <v-text-field
+        flat
+        solo
+        v-model="line.name"
+        class="product-editor"
+      ></v-text-field>
+    </td>
+    <td>
+      <v-text-field
+        flat
+        solo
+        v-model="line.price"
+        class="product-editor"
+      ></v-text-field>
+    </td>
+    <td>
+      <v-text-field
+        flat
+        solo
+        v-model="line.tax"
+        class="product-editor"
+      ></v-text-field>
+    </td>
+    <td>
+      <v-text-field
+        flat
+        solo
+        v-model="TotalPrice"
+        class="product-editor"
+      ></v-text-field>
+    </td>
   </tr>
 </template>
 <script>

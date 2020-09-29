@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Bill page</h1>
-    <v-simple-table>
+    <h1 class="bill-title">Bill page</h1>
+    <v-simple-table class="table">
       <template v-slot:default>
         <thead>
           <tr>
@@ -34,9 +34,7 @@
         </tfoot>
       </template>
     </v-simple-table>
-    <v-btn elevation="2" @click="AddLine">Add line</v-btn>
-
-    <v-footer absolute>
+    <v-footer class="primary" absolute>
       <v-col align="right">
         <v-btn color="error" dark large @click="Back"> Back </v-btn>
       </v-col>

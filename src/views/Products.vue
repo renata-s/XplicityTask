@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-simple-table>
+    <v-simple-table class="product-table">
       <template v-slot:default>
         <thead>
           <tr>
@@ -33,7 +33,7 @@
         </tfoot>
       </template>
     </v-simple-table>
-    <v-btn elevation="2" @click="AddLine">Add line</v-btn>
+    <v-btn dark class="add-line" @click="AddLine">Add line</v-btn>
 
     <v-footer absolute>
       <v-col align="right">

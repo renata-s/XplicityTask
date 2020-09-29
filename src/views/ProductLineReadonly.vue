@@ -1,10 +1,10 @@
 <template>
   <tr>
-    <td>{{ line.code }}</td>
-    <td>{{ line.name }}</td>
-    <td>{{ line.price }}</td>
-    <td>{{ line.tax }}</td>
-    <td>{{ TotalPrice }}</td>
+    <td class="product-readonly">{{ line.code }}</td>
+    <td class="product-readonly">{{ line.name }}</td>
+    <td class="product-readonly">{{ line.price }}</td>
+    <td class="product-readonly">{{ line.tax }}</td>
+    <td class="product-readonly">{{ TotalPrice }}</td>
   </tr>
 </template>
 <script>

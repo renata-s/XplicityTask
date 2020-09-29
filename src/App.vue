@@ -5,7 +5,7 @@
       prominent
       src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
     >
-      <v-toolbar-title>Xplicity products</v-toolbar-title>
+      <v-toolbar-title class="title">Xplicity products</v-toolbar-title>
     </v-toolbar>
 
     <router-view></router-view>
@@ -18,4 +18,6 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "./assets/style.scss";
+</style>

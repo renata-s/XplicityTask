@@ -1,0 +1,43 @@
+.theme--light.v-data-table
+  > .v-data-table__wrapper
+  > table
+  > thead
+  > tr:last-child
+  > th {
+  padding: 0 24px;
+  font-size: 1.3em;
+}
+
+.product-table table tbody tr:hover {
+  background-color: transparent !important;
+}
+
+.v-input__slot {
+  font-size: 1.3em;
+}
+
+div.v-data-table__wrapper table tbody tr td.product-readonly {
+  padding: 0 24px;
+  font-size: 1.3em;
+}
+
+.add-line {
+  margin: 0 24px;
+}
+
+tfoot .v-text-field.v-text-field--solo .v-input__control input {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #00000099;
+}
+
+.bill-title {
+  color: #00000099;
+  padding: 20px 24px;
+}
+
+.v-toolbar__content .v-toolbar__title.title {
+  font-weight: bold;
+  font-size: 3em;
+  padding-left: 12px;
+}
